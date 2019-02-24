@@ -1,12 +1,34 @@
-/*
-  DIAGNOSTIC STYLING
-*/
-body {
-  background: gray;
+/* Doodle Stage */
+#stage {
+  height: 200px;
+  width: 400px;
 }
 
-* {
-  outline: 1px dotted black;
+.whiskey {
+    height:35%;
+    width: 50%;
+    margin: auto;
+    stroke: black;
+/*     stroke-width: 10px; */
+    fill: transparent;
+
+    stroke-dasharray: 3350; 
+    animation: whiskey-animation 20s infinite;
+}
+@keyframes whiskey-animation {
+    0% {
+        stroke-dashoffset: -3350;
+    }
+    35% {
+        stroke-dashoffset: 0;   
+    }
+    65% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -3350;
+    }
+
 }
 
-/* Your Awesome Scripts */
+
